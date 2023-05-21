@@ -86,7 +86,7 @@ async def gen_thumb(videoid, user_id, theme):
         x = f.resize((107, 107))
 
         youtube = Image.open(f"cache/thumb{videoid}.png")
-        bg = Image.open(f"assets/{theme}.PNG")
+        bg = Image.open(f"Backgrounds/{theme}.PNG")
         image1 = changeImageSize(1280, 720, youtube)
         image2 = image1.convert("RGBA")
         background = image2.filter(filter=ImageFilter.BoxBlur(30))
@@ -131,16 +131,16 @@ async def gen_thumb(videoid, user_id, theme):
             draw.text(
                 ((1280 - text_w) / 2, 30),
                 f"ARCH X MUSIC",
-                fill="white",
+                fill="cyan",
                 font=font,
             )
             text_w, text_h = draw.textsize(
-                f"", font=arial
+                f"Arch Music One Of The Most Advanced Telegram Music Bot", font=arial
             )
             draw.text(
                 ((1280 - text_w) / 2, 80),
-                f"",
-                fill="white",
+                f"Arch Music One Of The Most Advanced Telegram Music Bot",
+                fill="green",
                 font=arial,
             )
             if para[0]:
@@ -165,10 +165,10 @@ async def gen_thumb(videoid, user_id, theme):
                 )
         except:
             pass
-        text_w, text_h = draw.textsize(f"", font=arial)
+        text_w, text_h = draw.textsize(f"Telegram: ArchBots", font=arial)
         draw.text(
             ((1280 - text_w) / 2, 620),
-            f"",
+            f"Telegram: ArchBots",
             fill="white",
             font=arial,
         )
@@ -245,7 +245,7 @@ async def gen_qthumb(videoid, user_id, theme):
         x = f.resize((107, 107))
 
         youtube = Image.open(f"cache/thumb{videoid}.png")
-        bg = Image.open(f"assets/{theme}.PNG")
+        bg = Image.open(f"Backgrounds/{theme}.PNG")
         image1 = changeImageSize(1280, 720, youtube)
         image2 = image1.convert("RGBA")
         background = image2.filter(filter=ImageFilter.BoxBlur(30))
