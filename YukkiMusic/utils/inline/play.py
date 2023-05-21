@@ -76,8 +76,8 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                       text="💬JOIN",
-                       url='https://t.me/ArchBots'), 
+                       text="OWNER",
+                       url='https://t.me/YO_UR_OFFICIAL_CRUSH'), 
             InlineKeyboardButton(
                 text=_["CLOSEMENU_BUTTON"], callback_data="close"
             )
