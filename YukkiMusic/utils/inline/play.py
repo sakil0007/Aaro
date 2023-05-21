@@ -139,8 +139,8 @@ def stream_markup(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                       text="JOIN",
-                       url='https://t.me/ARCHBOTS'), 
+                       text="OWNER",
+                       url='https://t.me/YO_UR_OFFICIAL_CRUSH'), 
             InlineKeyboardButton(
                 text=_["CLOSEMENU_BUTTON"], callback_data="close"
             )
