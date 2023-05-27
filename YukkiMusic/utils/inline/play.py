@@ -52,7 +52,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     pos = int(y)
 
     line = "—"
-    circle = "❀❁✿✾❁※✤✥"
+    circle = "❀❁✿✾❁"
 
     bar = line*(pos-1)
     bar += circle
@@ -77,7 +77,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         [
             InlineKeyboardButton(
                        text="OWNER",
-                       url='https://t.me/YO_UR_OFFICIAL_CRUSH'), 
+                       url='https://t.me/Its_Me_SakiL'), 
             InlineKeyboardButton(
                 text=_["CLOSEMENU_BUTTON"], callback_data="close"
             )
@@ -94,7 +94,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
     pos = int(y)
 
     line = "—"
-    circle = "❀❁✿✾❁※✤✥"
+    circle = "❀❁✿✾❁"
 
     bar = line*(pos-1)
     bar += circle
@@ -140,7 +140,7 @@ def stream_markup(_, videoid, chat_id):
         [
             InlineKeyboardButton(
                        text="OWNER",
-                       url='https://t.me/YO_UR_OFFICIAL_CRUSH'), 
+                       url='https://t.me/Its_Me_SakiL'), 
             InlineKeyboardButton(
                 text=_["CLOSEMENU_BUTTON"], callback_data="close"
             )
